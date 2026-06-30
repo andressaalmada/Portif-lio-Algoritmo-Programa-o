@@ -17,10 +17,41 @@
         <p>Esta atividade abordou casos como vibração em turbina, rota de caminhões, análise de resistências e balanço de massa em reator, utilizando listas e funções auxiliares.</p>
         <h2>Resultados obtidos</h2>
         <p>Foi possível desenvolver soluções mais robustas com organização de dados em listas, automação de procedimentos e integração de lógica para tomada de decisão.</p>
-        <h2>Código</h2>
-        <pre><code>dados = [12, 18, 14, 20]
+        <h2>Como resolver cada questão</h2>
+        <ol>
+          <li>
+            <strong>Questão 1 — Média de um conjunto de dados</strong>
+            <p>Exemplo: para os dados [10, 20, 30], a média é 20.</p>
+            <p>Some todos os valores e divida pelo número de elementos para obter a média.</p>
+            <pre><code>dados = [12, 18, 14, 20, 16]
+
 media = sum(dados) / len(dados)
-print("Média dos dados:", media)</code></pre>
+
+print(f"A média dos dados é: {media}")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 2 — Identificação do maior valor</strong>
+            <p>Exemplo: em [5, 9, 3, 12], o maior valor é 12.</p>
+            <p>Use a função de máximo para localizar o maior elemento da lista.</p>
+            <pre><code>valores = [8, 14, 6, 21, 10]
+
+maior = max(valores)
+
+print(f"O maior valor é: {maior}")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 3 — Filtragem de valores acima da média</strong>
+            <p>Exemplo: com [4, 8, 6, 10], a média é 7 e os valores acima dela são 8 e 10.</p>
+            <p>Calcule a média e depois selecione apenas os valores que forem maiores do que ela.</p>
+            <pre><code>dados = [12, 18, 14, 20, 9, 16]
+
+media = sum(dados) / len(dados)
+acima_da_media = [valor for valor in dados if valor > media]
+
+print(f"Média: {media}")
+print(f"Valores acima da média: {acima_da_media}")</code></pre>
+          </li>
+        </ol>
         <p><a href="../index.html">Voltar para a página principal</a></p>
       </section>
     </main>

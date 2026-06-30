@@ -218,6 +218,15 @@ a {
   font-size: clamp(2.2rem, 4vw, 3rem);
 }
 
+.section-subtitle {
+  margin: 18px 0 14px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #3d7d5a;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -317,6 +326,30 @@ a {
 
 .page-card ul {
   padding-left: 1.2rem;
+}
+
+.page-card pre {
+  margin: 12px 0 20px;
+  padding: 16px;
+  background: #0f1720;
+  border: 1px solid #203245;
+  border-radius: 14px;
+  overflow-x: auto;
+}
+
+.page-card code {
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #e6f6ed;
+}
+
+.page-card ol {
+  padding-left: 1.4rem;
+}
+
+.page-card li + li {
+  margin-top: 14px;
 }
 
 .page-card .grid-two {

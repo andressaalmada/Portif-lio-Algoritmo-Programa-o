@@ -29,10 +29,55 @@
         </div>
         <h2>Resultados obtidos</h2>
         <p>Foram resolvidos exercícios sobre variáveis, conversão de unidades, áreas, condições e laços de repetição, consolidando a compreensão inicial do algoritmo.</p>
-        <h2>Código</h2>
-        <pre><code>valor = float(input("Digite o valor em metros: "))
-centimetros = valor * 100
-print("Valor em centímetros:", centimetros)</code></pre>
+        <h2>Como resolver cada questão</h2>
+        <ol>
+          <li>
+            <strong>Questão 1 — Conversão de metros para centímetros</strong>
+            <p>Exemplo: se o valor digitado for 2,5 metros, o resultado deve ser 250 centímetros.</p>
+            <p>Primeiro, leia o valor em metros. Depois, multiplique por 100 para obter centímetros e mostre o resultado.</p>
+            <pre><code>valor_em_metros = float(input("Digite o valor em metros: "))
+
+# 1 metro = 100 centímetros
+valor_em_centimetros = valor_em_metros * 100
+
+print(f"{valor_em_metros} metros equivalem a {valor_em_centimetros} centímetros.")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 2 — Cálculo da área de um retângulo</strong>
+            <p>Exemplo: base = 4 e altura = 3, então a área é 12.</p>
+            <p>Leia a base e a altura, aplique a fórmula da área $A = b \times h$ e exiba o resultado.</p>
+            <pre><code>base = float(input("Digite a base do retângulo: "))
+altura = float(input("Digite a altura do retângulo: "))
+
+area = base * altura
+
+print(f"A área do retângulo é: {area}")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 3 — Verificação de aprovação</strong>
+            <p>Exemplo: notas 7,0 e 5,0 geram média 6,0, então o aluno é aprovado.</p>
+            <p>Calcule a média das duas notas. Se a média for maior ou igual a 6, o aluno está aprovado; caso contrário, está reprovado.</p>
+            <pre><code>nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+
+media = (nota1 + nota2) / 2
+
+if media >= 6:
+    print(f"Aluno aprovado com média: {media}")
+else:
+    print(f"Aluno reprovado com média: {media}")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 4 — Tabuada de um número</strong>
+            <p>Exemplo: para o número 3, a tabuada mostra 3 x 1 = 3, 3 x 2 = 6, até 3 x 10 = 30.</p>
+            <p>Peça um número inteiro e use um laço de repetição para mostrar a tabuada de 1 a 10.</p>
+            <pre><code>numero = int(input("Digite um número inteiro: "))
+
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")</code></pre>
+          </li>
+        </ol>
         <p><a href="../index.html">Voltar para a página principal</a></p>
       </section>
     </main>

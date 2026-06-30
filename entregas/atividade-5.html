@@ -16,10 +16,36 @@
         <p>A atividade utilizou a análise de treliças planas para calcular forças nas barras e determinar o comportamento da estrutura sob carregamento vertical.</p>
         <h2>Resultados obtidos</h2>
         <p>O código gerou as forças internas nas barras, identificou barras tracionadas e comprimidas e elaborou gráficos que facilitam a interpretação estrutural.</p>
-        <h2>Código</h2>
-        <pre><code>forcas = {'AB': 15, 'BC': -10, 'CD': 8}
-for barra, valor in forcas.items():
-    print(barra, valor)</code></pre>
+        <h2>Como resolver a análise da treliça</h2>
+        <p>Exemplo: uma barra com força +8 kN está em tração, enquanto uma barra com -5 kN está em compressão.</p>
+        <p>Primeiro, organize as forças nas barras em um dicionário. Depois, classifique cada barra como tração ou compressão com base no sinal da força. Por fim, gere um gráfico para visualizar o sentido do esforço em cada barra.</p>
+        <pre><code>import matplotlib.pyplot as plt
+
+# Dados das forças nas barras da treliça (kN)
+barras = {
+    "AB": 15,
+    "BC": -10,
+    "CD": 8,
+    "DE": -6,
+}
+
+for barra, valor in barras.items():
+    if valor > 0:
+        estado = "Tração"
+    else:
+        estado = "Compressão"
+    print(f"{barra}: {valor} kN ({estado})")
+
+nomes = list(barras.keys())
+forcas = list(barras.values())
+
+cores = ['green' if f > 0 else 'red' for f in forcas]
+
+plt.bar(nomes, forcas, color=cores)
+plt.axhline(0, color='black', linewidth=1)
+plt.ylabel('Força (kN)')
+plt.title('Forças nas barras da treliça')
+plt.show()</code></pre>
         <p><a href="../index.html">Voltar para a página principal</a></p>
       </section>
     </main>

@@ -23,11 +23,65 @@
         </ul>
         <h2>Resultados obtidos</h2>
         <p>As soluções em Python foram avaliadas com foco em clareza, entrada correta dos dados e respostas adequadas aos problemas propostos.</p>
-        <h2>Código</h2>
-        <pre><code>nota1 = float(input("Nota 1: "))
+        <h2>Como resolver cada questão</h2>
+        <ol>
+          <li>
+            <strong>Questão 1 — Cálculo da média</strong>
+            <p>Exemplo: notas 8,5 e 6,5 resultam em média 7,5.</p>
+            <p>Some as duas notas e divida por 2 para encontrar a média final.</p>
+            <pre><code>nota1 = float(input("Nota 1: "))
 nota2 = float(input("Nota 2: "))
+
 media = (nota1 + nota2) / 2
-print("Média:", media)</code></pre>
+
+print(f"A média das notas é: {media}")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 2 — Verificação de salário líquido</strong>
+            <p>Exemplo: salário bruto de 1000,00 com 11% de INSS gera um desconto de 110,00 e líquido de 890,00.</p>
+            <p>Calcule o INSS com uma porcentagem fixa do salário bruto e subtraia esse valor do salário bruto.</p>
+            <pre><code>salario_bruto = float(input("Digite o salário bruto: "))
+percentual_inss = 0.11
+
+inss = salario_bruto * percentual_inss
+salario_liquido = salario_bruto - inss
+
+print(f"INSS: {inss}")
+print(f"Salário líquido: {salario_liquido}")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 3 — Classificação por faixa de idade</strong>
+            <p>Exemplo: idade 15 é classificada como adolescente.</p>
+            <p>Compare a idade com os limites das faixas para decidir se a pessoa é criança, adolescente, adulto ou idoso.</p>
+            <pre><code>idade = int(input("Digite a idade: "))
+
+if idade < 12:
+    print("Criança")
+elif idade < 18:
+    print("Adolescente")
+elif idade < 60:
+    print("Adulto")
+else:
+    print("Idoso")</code></pre>
+          </li>
+          <li>
+            <strong>Questão 4 — Cálculo do imposto sobre salário</strong>
+            <p>Exemplo: salário de 3000,00 tem parte tributável na faixa de 15%, então o imposto é calculado sobre o excesso da base da faixa.</p>
+            <p>Use faixas de cálculo para aplicar a alíquota correta sobre a parte do salário que se encaixa em cada intervalo.</p>
+            <pre><code>salario = float(input("Digite o salário: "))
+
+if salario <= 1903.98:
+    imposto = 0
+elif salario <= 2826.65:
+    imposto = (salario - 1903.98) * 0.075
+elif salario <= 3751.05:
+    imposto = (2826.65 - 1903.98) * 0.075 + (salario - 2826.65) * 0.15
+else:
+    imposto = (2826.65 - 1903.98) * 0.075 + (3751.05 - 2826.65) * 0.15 + (salario - 3751.05) * 0.225
+
+print(f"Imposto a pagar: {imposto}")</code></pre>
+          </li>
+        </ol>
         <p><a href="../index.html">Voltar para a página principal</a></p>
       </section>
     </main>

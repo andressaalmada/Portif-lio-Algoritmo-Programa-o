@@ -17,10 +17,40 @@
         <p>Foram usados modelos como Copilot, Gemini e Claude para gerar problemas em engenharia elétrica, mecânica e telecomunicações, além de comparar a qualidade das soluções fornecidas.</p>
         <h2>Resultados obtidos</h2>
         <p>A comparação mostrou que a melhor resposta para o contexto da atividade foi a que apresentou enunciados mais claros, soluções coerentes e código funcional com menor número de erros.</p>
-        <h2>Código</h2>
-        <pre><code>prompt = "Resolva um problema de engenharia com passos claros"
+        <h2>Como resolver cada questão</h2>
+        <ol>
+          <li>
+            <strong>Prompt da questão 1</strong>
+            <p>Exemplo: peça a resolução de um circuito com tensão de 12 V e resistência de 4 Ω, mostrando o cálculo da corrente.</p>
+            <p>Defina um enunciado claro, inclua o contexto da engenharia elétrica e peça uma solução com fórmula e interpretação.</p>
+            <pre><code>prompt = """Resolva um problema de engenharia elétrica com passos claros, descrevendo a fórmula, os dados e a interpretação do resultado final."""
+
 resposta = modelo.gerar(prompt)
 print(resposta)</code></pre>
+          </li>
+          <li>
+            <strong>Prompt da questão 2</strong>
+            <p>Exemplo: peça um exercício sobre força resultante com massa de 5 kg e aceleração de 2 m/s².</p>
+            <p>Estruture a pergunta com objetivo, dados, exemplo numérico e instrução para entregar a solução em Python.</p>
+            <pre><code>prompt = """Crie um exercício de mecânica com enunciado objetivo, exemplo numérico e resposta detalhada em Python."""
+
+resposta = modelo.gerar(prompt)
+print(resposta)</code></pre>
+          </li>
+          <li>
+            <strong>Comparação dos modelos</strong>
+            <p>Exemplo: aplique a mesma pergunta a todos os modelos para observar qual responde com maior clareza e menor erro.</p>
+            <p>Use a mesma pergunta para todos os modelos e compare clareza, precisão e qualidade da resposta gerada.</p>
+            <pre><code>modelos = ["Copilot", "Gemini", "Claude"]
+pergunta = "Resolva um problema de engenharia com passos claros, sem ambiguidades e com código funcional."
+
+for modelo in modelos:
+    resposta = gerar_resposta(modelo, pergunta)
+    print(f"Modelo: {modelo}")
+    print(resposta)
+    print("-" * 50)</code></pre>
+          </li>
+        </ol>
         <p><a href="../index.html">Voltar para a página principal</a></p>
       </section>
     </main>

@@ -21,13 +21,43 @@
           <li>Momento no engaste: 25 kN·m</li>
           <li>Diagramas de esforço cortante e momento fletor gerados com matplotlib</li>
         </ul>
-        <h2>Código</h2>
-        <pre><code>q = 2      # kN/m
+        <h2>Como resolver a viga em balanço</h2>
+        <p>Exemplo: com q = 2 kN/m e L = 5 m, a reação é 10 kN e o momento é 25 kN·m.</p>
+        <p>Primeiro, determine a reação no engaste com $R_A = qL$. Em seguida, calcule o momento no engaste com $M_A = \frac{qL^2}{2}$. Depois, monte as funções de esforço cortante e momento fletor ao longo do comprimento da viga e plote os diagramas.</p>
+        <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+# Dados da viga em balanço
+q = 2      # kN/m
 L = 5      # m
+
+# Reações e momentos
 Ra = q * L
 Ma = q * L**2 / 2
-print("Reação:", Ra, "kN")
-print("Momento no engaste:", Ma, "kN·m")</code></pre>
+
+# Coordenadas ao longo da viga
+x = np.linspace(0, L, 200)
+
+# Diagramas de esforço cortante e momento fletor
+V = -q * x
+M = -q * x**2 / 2
+
+print(f"Reação no engaste: {Ra} kN")
+print(f"Momento no engaste: {Ma} kN·m")
+
+fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+axes[0].plot(x, V, color='blue')
+axes[0].set_title('Esforço cortante')
+axes[0].set_xlabel('x (m)')
+axes[0].set_ylabel('V (kN)')
+
+axes[1].plot(x, M, color='red')
+axes[1].set_title('Momento fletor')
+axes[1].set_xlabel('x (m)')
+axes[1].set_ylabel('M (kN·m)')
+
+plt.tight_layout()
+plt.show()</code></pre>
         <h2 id="portal-alegrete">Portal Alegrete</h2>
         <p>A avaliação do portal foi realizada com foco em conteúdo, organização, acessibilidade e utilidade para estudantes, moradores e turistas. Foram indicadas melhorias como busca avançada, mapas, classificados e central de empregos.</p>
         <p><a href="../index.html">Voltar para a página principal</a></p>
