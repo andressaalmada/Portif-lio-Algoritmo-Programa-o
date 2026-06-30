@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Alegrete</title>
+    <style>
+      body { margin: 0; font-family: Inter, Arial, sans-serif; background: #f8fafc; color: #243b53; }
+      .page { padding: 32px; }
+      h1 { text-align: center; margin-bottom: 28px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+      .card { background: #ffffff; border: 1px solid #e5edf6; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 30px -25px #3b82f6; }
+      .card img { width: 100%; height: 180px; object-fit: cover; }
+      .body { padding: 14px; }
+      .body h3 { margin: 0 0 8px; font-size: 1.02rem; }
+      .body p { margin: 6px 0; font-size: 0.9rem; }
+      .button { display: inline-block; margin-top: 10px; padding: 10px 14px; background: #2563eb; color: white; border-radius: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Galeria Fotográfica de Alegrete-RS</h1>
+      <div class="grid">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pra%C3%A7a_Municipal_de_Alegrete_-_RS.jpg/800px-Pra%C3%A7a_Municipal_de_Alegrete_-_RS.jpg" alt="Praça Municipal de Alegrete" />
+          <div class="body">
+            <h3>Praça Municipal de Alegrete</h3>
+            <p><strong>Autor:</strong> Wikimedia Commons</p>
+            <p><strong>Licença:</strong> CC BY-SA</p>
+            <a class="button" href="https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_Municipal_de_Alegrete_-_RS.jpg" target="_blank">Fonte original</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Prefeitura_de_Alegrete.jpg/800px-Prefeitura_de_Alegrete.jpg" alt="Prefeitura de Alegrete" />
+          <div class="body">
+            <h3>Prefeitura Municipal</h3>
+            <p><strong>Autor:</strong> Wikimedia Commons</p>
+            <p><strong>Licença:</strong> CC BY-SA</p>
+            <a class="button" href="https://commons.wikimedia.org/wiki/File:Prefeitura_de_Alegrete.jpg" target="_blank">Fonte original</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Parque_Fernando_Ferrari.jpg/800px-Parque_Fernando_Ferrari.jpg" alt="Parque Fernando Ferrari" />
+          <div class="body">
+            <h3>Parque Fernando Ferrari</h3>
+            <p><strong>Autor:</strong> Wikimedia Commons</p>
+            <p><strong>Licença:</strong> CC BY-SA</p>
+            <a class="button" href="https://commons.wikimedia.org/wiki/File:Parque_Fernando_Ferrari.jpg" target="_blank">Fonte original</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
