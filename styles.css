@@ -3,8 +3,8 @@
   font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background: #f5f7fb;
-  color: #162133;
+  background: #f4fbf7;
+  color: #173624;
 }
 
 * {
@@ -18,8 +18,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top, #f2f6ff, #f5f7fb 45%),
-    linear-gradient(180deg, #eff3ff 0%, #f8fbff 100%);
+    radial-gradient(circle at top, #e9f9ef, #f5fbf7 45%),
+    linear-gradient(180deg, #effaf4 0%, #f8fff9 100%);
 }
 
 img {
@@ -43,9 +43,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.76));
+  background: linear-gradient(180deg, rgba(248, 255, 251, 0.94), rgba(239, 248, 243, 0.82));
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(24, 50, 91, 0.08);
+  border-bottom: 1px solid rgba(33, 87, 56, 0.08);
 }
 
 .nav-wrap {
@@ -58,7 +58,7 @@ a {
 .brand {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #17305a;
+  color: #1d5a36;
 }
 
 .nav-links {
@@ -68,12 +68,12 @@ a {
 
 .nav-links a {
   font-weight: 600;
-  color: #456079;
+  color: #4f6d5d;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: #1f4dd8;
+  color: #1f7a46;
 }
 
 .hero {
@@ -101,7 +101,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-size: 0.68rem;
-  color: #4d6d9f;
+  color: #3c7a52;
 }
 
 .eyebrow::before {
@@ -109,12 +109,12 @@ a {
   display: inline-block;
   width: 42px;
   height: 2px;
-  background: linear-gradient(135deg, #4f82ff, #6c5cf8);
+  background: linear-gradient(135deg, #2f9e44, #1b6d40);
 }
 
 .hero-text {
   font-size: 1.05rem;
-  color: #52708d;
+  color: #5d7a68;
   max-width: 50rem;
 }
 
@@ -136,23 +136,23 @@ a {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, #4f82ff, #6f59ff);
+  background: linear-gradient(135deg, #2f9e44, #1d6f3f);
   color: #fff;
-  box-shadow: 0 12px 30px -14px rgba(79, 130, 255, 0.8);
+  box-shadow: 0 12px 30px -14px rgba(47, 158, 68, 0.6);
 }
 
 .button.secondary {
-  border: 1px solid #d8e5fd;
-  color: #30579b;
-  background: rgba(255,255,255,0.5);
+  border: 1px solid #cbead7;
+  color: #2d6d4b;
+  background: rgba(255,255,255,0.56);
 }
 
 .hero-card {
-  background: linear-gradient(180deg, #ffffff, #f2f4ff);
-  border: 1px solid #e6edf9;
+  background: linear-gradient(180deg, #ffffff, #f2fcf5);
+  border: 1px solid #d5efdf;
   border-radius: 28px;
   padding: 28px;
-  box-shadow: 0 18px 50px -25px rgba(28, 50, 99, 0.5);
+  box-shadow: 0 18px 50px -25px rgba(33, 100, 59, 0.45);
 }
 
 .hero-card-head {
@@ -169,7 +169,7 @@ a {
 }
 
 .hero-card-head strong {
-  color: #4f82ff;
+  color: #2f9e44;
 }
 
 .hero-card ul {
@@ -180,7 +180,7 @@ a {
 
 .hero-card li {
   padding: 14px 0;
-  border-bottom: 1px dashed #e9effd;
+  border-bottom: 1px dashed #e7f5ec;
 }
 
 .hero-card li:last-child {
@@ -198,11 +198,11 @@ a {
 .delivery-card,
 .report-box,
 .page-card {
-  background: rgba(255, 255, 255, 0.54);
-  border: 1px solid #ecf1fa;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid #e6f3ea;
   border-radius: 20px;
   padding: 28px;
-  box-shadow: 0 10px 32px -24px rgba(27, 50, 94, 0.6);
+  box-shadow: 0 10px 32px -24px rgba(31, 122, 70, 0.5);
 }
 
 .highlight-card h2 {
@@ -234,8 +234,8 @@ a {
   display: inline-block;
   width: fit-content;
   padding: 6px 12px;
-  background: #edf2ff;
-  color: #3765d3;
+  background: #eaf7ef;
+  color: #2c7d4d;
   border-radius: 999px;
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -255,7 +255,7 @@ a {
   display: inline-flex;
   margin-top: 8px;
   font-weight: 700;
-  color: #285ad0;
+  color: #247146;
 }
 
 .report {
@@ -290,13 +290,13 @@ a {
 }
 
 .footer a {
-  color: #30579b;
+  color: #2d6d4b;
 }
 
 .commit-hash {
   display: inline-block;
   font-family: 'Courier New', monospace;
-  background: #f0f4ff;
+  background: #edf9f2;
   padding: 10px 12px;
   border-radius: 12px;
 }
@@ -328,8 +328,8 @@ a {
 .callout {
   margin: 18px 0;
   padding: 18px;
-  border-left: 4px solid #4f82ff;
-  background: #f6f9ff;
+  border-left: 4px solid #2f9e44;
+  background: #f3fbf6;
 }
 
 @media (max-width: 900px) {
